@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <script src="friends.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="/" class="logo">Friend Finder</a>
+                <ul class="right">
+                    <li>
+                        <a href="/home" class="links">Home</a>
+                    </li>
+                    <li>
+                        <a href="/api/friends" class="links">API Friends List</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/packcodes/friend-finder" class="links">GitHub Repo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container surveyQuestions">
+        <h2>Compatibility Questions!</h2>
+        <br>
+        <h3>
+            <strong>About You</strong>
+        </h3>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="fullName" type="text" class="form-control" required>
+                <label class="active" for="fullName">Full Name</label>
+            </div>
+        </div>
+        <div class="row">
+                <div class="input-field col s6">
+                    <input id="photo" type="text" class="form-control" required>
+                    <label class="active" for="fullName">Picture of Self (Link)</label>
+                </div>
+            </div>
+        <br>
+        
+        <h3 class="questionHead">
+            <strong>Question 1</strong>
+        </h3>
+        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+        <select  class="userSelection" id"q1">
+            <option value="">Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3 class="questionHead">
+            <strong>Question 2</strong>
+        </h3>
+        <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+        <select  class="userSelection" id"q2">
+            <option value="">Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3 class="questionHead">
+            <strong>Question 3</strong>
+        </h3>
+        <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        <select class="userSelection" id"q3">
+            <option value="">Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3 class="questionHead">
+            <strong>Question 4</strong>
+        </h3>
+        <h4>You rarely do something just out of sheer curiosity.</h4>
+        <select class="userSelection" id="q4">
+            <option value="" disabled selected>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3 class="questionHead">
+            <strong>Question 5</strong>
+        </h3>
+        <h4>People can rarely upset you.</h4>
+        <select class="userSelection" id="q5">
+            <option value="" disabled selected>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3 class="questionHead">
+            <strong>Question 6</strong>
+        </h3>
+        <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+        <select class="userSelection" id="q6">
+            <option value="" disabled selected>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3 class="questionHead">
+            <strong>Question 7</strong>
+        </h3>
+        <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+        <select id="q7">
+            <option value="" disabled selected>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3 class="questionHead">
+            <strong>Question 8</strong>
+        </h3>
+        <h4>You rarely get carried away by fantasies and ideas.</h4>
+        <select class="userSelection" id="q8">
+            <option value="" disabled selected>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3 class="questionHead">
+            <strong>Question 9</strong>
+        </h3>
+        <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+        <select class="userSelection" id="q9">
+            <option value="" disabled selected>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3 class="questionHead">
+            <strong>Question 10</strong>
+        </h3>
+        <h4 >You feel more energetic after spending time with a group of people.</h4>
+        <select class="userSelection" id="q10">
+            <option value="" disabled selected>Select an Option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <Button class="col s12 questionsButton" type="submit" id="submitButton">Find a Mate!</Button>
+
+    </div>
+
+
+    </div>
+    <footer>
+            <div class="nav-wrapper">
+                    <ul class="center">
+                        <li>
+                        <p>Copyright Tim Hill 2018</p>
+                        </li>
+                        <li>
+                            <a href="/home" class="links">Home</a>
+                        </li>
+                        <li>
+                            <a href="/api/friends" class="links">API Friends List</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/packcodes/friend-finder" class="links">GitHub Repo</a>
+                        </li>
+                    </ul>
+                </div>
+    </footer>
+</body>
+<script>
+     $(document).ready(function() {
+    $('select').material_select();
+  });
+
+//   Activate Modal
+
+//   Activate Find a mate Button
+$("submitButton").on("click", function(event) {
+   event.preventDefault();
+
+//    Collect user inputs
+
+    var userInput = {
+        name: $('fullName').val().trim(),
+        image: $('photo').val().trim(),
+        score:[
+            $('q1').val().trim(),
+            $('q2').val().trim(),
+            $('q3').val().trim(),
+            $('q4').val().trim(),
+            $('q5').val().trim(),
+            $('q6').val().trim(),
+            $('q7').val().trim(),
+            $('q8').val().trim(),
+            $('q9').val().trim(),
+            $('q10').val().trim()
+        ]
+    };
+    
+    post('/api/friends', userInput)
+    console.log(userInput);
+    
+});
+</script>
+
+</html>
