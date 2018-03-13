@@ -4,6 +4,8 @@ This full-stack site will take in results from your users' surveys, then compare
 
 Please go to this link to view Friend Finder xxx
 
+The survey can also be found on my portfolio under "Friend Finder" here xxx
+
 Before You Begin
 Check out this demo version of the site. Use this as a model for how we expect your assignment look and operate.
 
